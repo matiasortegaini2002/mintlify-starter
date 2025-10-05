@@ -1,0 +1,308 @@
+---
+title: "Tarjeta de Sellos"
+description: "Cómo crear una tarjeta de sellos en Dezik Labs"
+---
+
+# Tarjeta de Sellos
+
+<iframe
+  src="https://www.loom.com/embed/d6a0aa8237634cea820dc8af38f0d47e"
+  title="Cómo crear una tarjeta de sellos"
+  width="100%"
+  height="450"
+  frameBorder="0"
+  allowFullScreen
+/>
+
+### Cómo funciona la tarjeta de sellos
+
+Una tarjeta de sellos recompensa a los clientes por compras o visitas. El cliente acumula sellos por cada acción válida y, al llegar a una meta, canjea una recompensa. Ejemplo: con 10 sellos obtiene un café gratis. En la tarjeta, el cliente ve cuántos sellos tiene, cuántos faltan y cuándo obtuvo una recompensa. Al canjear, tú (comercio) descuentas la recompensa y el cliente vuelve a acumular desde donde corresponda.
+
+1. Tras iniciar sesión, ve al menú lateral.
+2. En la lista de módulos, haz clic en el ícono <img src="https://121681468-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FBfW4nnOu4AysbkbyxNug%2Fuploads%2Fdwvv3o54gpuhAez3wybk%2Fimage.png?alt=media&#x26;token=3fa79e9b-6537-4341-81d8-5652bfed4989" alt="Icono tarjetas" style={{height:'1em',display:'inline-block',verticalAlign:'text-bottom'}} /> para abrir **Tarjetas**.
+
+![Tarjetas](https://121681468-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FBfW4nnOu4AysbkbyxNug%2Fuploads%2FMu6miudRod4hm5GoE1Lk%2Fimage.png?alt=media&#x26;token=83caa525-e64b-4f25-942f-de8a2e7cc9d7)
+
+3. Puedes crear una tarjeta con una plantilla o **desde cero** (usaremos este flujo).
+4. Haz clic en el botón <img src="https://121681468-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FBfW4nnOu4AysbkbyxNug%2Fuploads%2FPz6xkMxEzisvhd93RHup%2Fimage.png?alt=media&#x26;token=d2379df0-6356-45e8-8028-d5f2d8ddb256" alt="Desde cero" style={{height:'1em',display:'inline-block',verticalAlign:'text-bottom'}} />.
+
+*Desde cero*  
+![Desde cero](https://121681468-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FBfW4nnOu4AysbkbyxNug%2Fuploads%2FnMDkDZIY59ZfiG2TcltE%2Fimage.png?alt=media&#x26;token=621f5f26-abe2-48bb-92db-475152290f97)
+
+5. El flujo de creación tiene **5 secciones**: **Tipo de tarjeta**, **Ajustes**, **Diseño**, **Información** y **Guardar & Vista previa**.
+
+---
+
+### Tipo de tarjeta
+
+1. Selecciona el tipo de tarjeta que deseas crear.
+2. Elige **Sellos (Stamp)**.
+3. Haz clic en **Continuar** para ir a **Ajustes**.
+
+*Seleccionar tipo y continuar*  
+![Seleccionar tipo](https://121681468-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FBfW4nnOu4AysbkbyxNug%2Fuploads%2FxSHZ9CRZLGKHr66T6I42%2Fimage.png?alt=media&#x26;token=11aaaf08-32fe-426f-b3ad-f02f079983df)
+
+---
+
+### Ajustes
+
+1. Configura: **Tipo de código de barras (1)**, **Programa de recompensas (2)** y **Vencimiento de la tarjeta (3)**.
+
+![Ajustes](https://121681468-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FBfW4nnOu4AysbkbyxNug%2Fuploads%2FO7rczCMNtERUr0LT3Okh%2Fimage.png?alt=media&#x26;token=5925fba3-5898-45c5-ac89-618b3e4ed587)
+
+**Tipo de código de barras**: define cómo se escanea y reconoce la tarjeta (elige el estilo que prefieras).
+
+**Programa de recompensas** — cómo los clientes ganan sellos:
+
+- **Gasto (Spend)**: sellos según el monto (ej.: 1 sello por $10; si compra $30 = 3 sellos).
+- **Visita (Visit)**: 1 sello por visita sin importar el monto.
+- **Sellos (Stamps)**: reglas personalizadas (productos/acciones/promos).
+- **Productos**: sellos según ítems del recibo (**solo con integración Toast**).
+
+![Programa de recompensas](https://121681468-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FBfW4nnOu4AysbkbyxNug%2Fuploads%2FoQZ39Pqom2JNfY6sLaQB%2Fimage.png?alt=media&#x26;token=f86f63bf-598d-4cda-962a-cd92a00d9e2d)
+
+Si activas **Restringir a 1 check-in por cliente por día**, solo se otorgarán sellos una vez al día por cliente.
+
+![Restricción por día](https://121681468-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FBfW4nnOu4AysbkbyxNug%2Fuploads%2FTFBuWqWD21KUIoAMJ02l%2Fimage.png?alt=media&#x26;token=9bb49c14-a70f-49f3-8ab4-f32b5ef30ab7)
+
+**Vencimiento de tarjeta — Ilimitado**: sin fecha de caducidad.  
+**Fecha fija**: no se puede usar después de esa fecha (no se borra del teléfono).  
+**Plazo fijo tras emisión**: días tras activación para que caduque.
+
+**¿Cómo quieres recompensar a tus clientes?** — Campo obligatorio. Define el **nombre de la recompensa** (ej. “Café gratis”) y el **costo de la recompensa** (costo para tu negocio).  
+❗️ Obligatorio con **Toast**.
+
+![Recompensa](https://121681468-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FBfW4nnOu4AysbkbyxNug%2Fuploads%2Fm92716eT3VOpwpQ8EMEC%2Fimage.png?alt=media&#x26;token=60663149-fdae-4177-892c-3973bc7256b4)
+
+**Happy hours** — periodo en el que se acreditan más sellos según tus parámetros.  
+❗️ Solo funciona con **Gasto (Spend)** y **Visita (Visit)**. Este sello extra no tiene validez específica.
+
+![Happy hours conf.](https://121681468-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FBfW4nnOu4AysbkbyxNug%2Fuploads%2FatZtWOdzJKgkQmvlWtrI%2Fimage.png?alt=media&#x26;token=017b8ea4-942e-4551-8e9f-51ab6d30e18d)
+
+*Happy hours*  
+![Happy hours preview](https://121681468-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FBfW4nnOu4AysbkbyxNug%2Fuploads%2FaHxZIzVY1vuEedQrsyyc%2Fimage.png?alt=media&#x26;token=a37190d0-9093-4623-83d3-dc4455aa1447)
+
+2. Configura **Vigencia del sello (4)**, **Ubicaciones (5)** y **Idioma de la tarjeta (6)**.
+
+![Vigencia/Ubicaciones/Idioma](https://121681468-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FBfW4nnOu4AysbkbyxNug%2Fuploads%2FbI2hYjgzKruI0tjBtJGN%2Fimage.png?alt=media&#x26;token=12bff91d-b4a9-4686-88f2-86dd797b9965)
+
+**Vigencia del sello** — días que un sello sigue siendo válido desde que se otorgó.  
+- Si ya se alcanzó el nivel de recompensa, esos sellos **no** caducan.  
+- Cada sello vence de forma individual según su fecha de obtención.
+
+**Ejemplo**: vigencia 1 mes; sello obtenido el **5 de abril** → vence el **5 de mayo**.
+
+**Ubicaciones** — añade direcciones para activar push de geolocalización (iOS Wallet envía push al estar ~100 m cerca). Puedes añadir varias. [Aprende más sobre geolocalización](../geolocations).
+
+**Idioma** — selecciona el idioma de la tarjeta.
+
+3. Configura **Formato de fecha (7)**, **Separador de miles/decimales (8)** y **Monto de compra al registrar (9)**.
+
+![Formato/Monto](https://121681468-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FBfW4nnOu4AysbkbyxNug%2Fuploads%2F1IDl9XYBbNNwukPQf27g%2Fimage.png?alt=media&#x26;token=60bd9158-a647-4456-be27-ae072874fc4a)
+
+- **Formato de fecha** — cómo se muestra en la tarjeta (irrelevante si no hay vencimiento).
+- **Separadores** — irrelevantes en tarjetas de sellos (no hay puntos); sí aplican a otros tipos.
+- **Monto de compra al registrar** — si está **ON**, el escáner pedirá el monto en cada transacción (se usa en ROI/ingresos). Si **OFF**, es opcional.
+
+4. Configura el **Formulario de emisión (10)** y las **UTM (11)**.
+
+*Tipo de campo y UTM*  
+![Formulario/UTM](https://121681468-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FBfW4nnOu4AysbkbyxNug%2Fuploads%2FHCBot6ZfS4OFiQoF1G74%2Fimage.png?alt=media&#x26;token=8c468d1d-898a-456f-97ec-7dc1ec5c5699)
+
+**Formulario de emisión** — campos que verá el cliente al instalar la tarjeta.  
+- Teléfono o email son obligatorios.  
+- **Obligatorio**: fuerza el llenado del campo.  
+- **Único**: normalmente solo para teléfono. Evita marcar “Nombre” como único.  
+- **Añadir campo** para crear nuevos y renombrar etiquetas.
+
+**UTM** — crea enlaces por canal (ej. “Facebook”). **Dezik Labs** generará una **URL** y **QR** con esa UTM para medir instalaciones por canal.
+
+![Ejemplo UTM](https://121681468-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FBfW4nnOu4AysbkbyxNug%2Fuploads%2FX2oqXAgrvuhnKWZCYphy%2Fimage.png?alt=media&#x26;token=1c434e3d-d306-4e26-ba7a-5e70bd2fcd25)
+
+Verás un enlace único con UTM y su QR. En estadísticas sabrás cuántas instalaciones llegaron por ese canal.
+
+![UTM & QR](https://121681468-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FBfW4nnOu4AysbkbyxNug%2Fuploads%2FzXuxfGdgCWmRUfOOcxbS%2Fimage.png?alt=media&#x26;token=cbb1906f-e9fe-4987-a174-0c3a59f13d66)
+
+5. Configura **Máscara de teléfono (12)**, **Política de privacidad (13)**, **Botón Instalar en Google Wallet (14)** y **Botón Instalar PWA (15)**.
+
+![Máscara/Política/Botones](https://121681468-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FBfW4nnOu4AysbkbyxNug%2Fuploads%2FwjMFL6Xu2yenHKaYcoO0%2Fimage.png?alt=media&#x26;token=4df5c18a-0797-4c57-b5dc-be073ec67db6)
+
+- **Máscara de teléfono** — prefijo por defecto (el cliente puede cambiarlo).
+- **Política de privacidad** — muestra el consentimiento en el formulario (editable).
+- **Botón Google Wallet** — permite añadir la tarjeta a Google Wallet.
+- **Botón PWA** — permite instalar la app web (se comporta como app nativa).
+
+6. Configura **Límite de tarjetas emitidas (16)**, **Límite de sellos por día (17)** y **Sellos iniciales al emitir (18)**.
+
+![Límites/Bienvenida](https://121681468-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FBfW4nnOu4AysbkbyxNug%2Fuploads%2F94ue1nq8CoIqgUS7g2gO%2Fimage.png?alt=media&#x26;token=9a6fd6a0-455d-43cc-bd23-f0b75f1f84b5)
+
+- **Tarjetas emitidas** — máximo de tarjetas (0 = ilimitado).
+- **Sellos por día** — máximo de sellos que un cliente puede ganar al día.
+- **Sellos de bienvenida** — sellos iniciales al emitir (por defecto 0).
+
+**Sellos por cumpleaños** — añade sellos extra en el cumpleaños del cliente (con push). Sin vencimiento específico.
+
+*Sellos de cumpleaños*  
+![Cumpleaños](https://121681468-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FBfW4nnOu4AysbkbyxNug%2Fuploads%2F5c0ecrNecpXf3vdDVcFw%2Fimage.png?alt=media&#x26;token=b32494d6-cfed-4318-9015-a412a835d190)
+
+7. **Analytics** — inserta scripts de analítica si lo necesitas.
+
+![Analytics](https://121681468-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FBfW4nnOu4AysbkbyxNug%2Fuploads%2FCbdFlJh9hbZeH9jKrtA1%2Fimage.png?alt=media&#x26;token=b7870868-27a1-46fa-8fb6-ad1399d71e98)
+
+Haz clic en **Continuar** para ir a **Diseño**.
+
+![Continuar a Diseño](https://121681468-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FBfW4nnOu4AysbkbyxNug%2Fuploads%2FGnRijjU4ck8EAVv73wE4%2Fimage.png?alt=media&#x26;token=9c657281-d9f3-4d47-b44e-d8c14b7ba417)
+
+---
+
+### Diseño
+
+1. Elige el **Número de sellos** necesarios para canjear la recompensa.  
+   ⚠️ **No se puede cambiar** tras activar la tarjeta. La posición de los sellos es fija según el número.
+
+![Número de sellos](https://121681468-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FBfW4nnOu4AysbkbyxNug%2Fuploads%2FXfVk3qgDOrcI4CdbIYLY%2Fimage.png?alt=media&#x26;token=f2addf23-c0d3-4b2a-8088-b86b1126b963)
+
+2. Configura **Sello activo (1)**, **Sello inactivo (2)**, **Logo (3)**, **Ícono (4)** y **Fondo bajo sellos (5)**.
+
+![Activos/Recursos](https://121681468-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FBfW4nnOu4AysbkbyxNug%2Fuploads%2FznrjFKjuZWMPYJ7z82Qb%2Fimage.png?alt=media&#x26;token=e76bfd4d-c4d3-430e-9295-e5ead03235fa)
+
+- **Sello activo** — ícono o imagen para sellos ganados.  
+- **Sello inactivo** — ícono o imagen para sellos no ganados.  
+- **Logo** — visible en la tarjeta y el formulario de emisión.  
+- **Ícono** — para notificaciones push.  
+- **Fondo bajo sellos** — imagen opcional (mín. **1125×432 px**) bajo la grilla.
+
+✅ Respeta tamaño/peso recomendados.  
+✅ Usa **íconos o imágenes** en ambos (activo e inactivo) y configúralos los dos.
+
+3. **Colores** — Fondo de tarjeta, Texto, Fondo de sello, Contorno, Sello activo/inactivo y Fondo bajo sellos.  
+   ✅ Si usas imágenes para sellos/fondo, puedes omitir colores (aplican a íconos del sistema).
+
+![Colores](https://121681468-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FBfW4nnOu4AysbkbyxNug%2Fuploads%2FX5WrqcFCNmleaFsX85o3%2Fimage.png?alt=media&#x26;token=8e1d3c87-dbc0-48cb-8549-2ca9860f51b6)
+
+4. **Nombres de campos** — elige qué campos del formulario de emisión aparecerán en la tarjeta y renómbralos (ej.: “nombre” → “titular”).
+
+![Campos](https://121681468-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FBfW4nnOu4AysbkbyxNug%2Fuploads%2FnQOihrLG3uMq8au73JwI%2Fimage.png?alt=media&#x26;token=30759f90-9f3a-4807-8e03-5c9b6789e3ce)
+
+5. Activadores visuales: **Mostrar logo en el formulario (7)** y **Mostrar color de fondo en el formulario (8)**.
+
+![Visual del formulario](https://121681468-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FBfW4nnOu4AysbkbyxNug%2Fuploads%2F13efOtqHRtnEGitZi7tn%2Fimage.png?alt=media&#x26;token=6d9a2bd7-193a-48e3-8b9b-28870334a439)
+
+Haz clic en **Continuar** para ir a **Información**.
+
+![Continuar a Información](https://121681468-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FBfW4nnOu4AysbkbyxNug%2Fuploads%2FeqeFdtyz36ZXwHpAwCpo%2Fimage.png?alt=media&#x26;token=8043bd3c-d61a-4b5e-9859-c05caab7407b)
+
+---
+
+### Información
+
+1. Completa la información de la tarjeta (verás la **vista previa móvil** a la derecha).
+2. **Descripción de la tarjeta** — breve resumen.
+
+![Descripción](https://121681468-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FBfW4nnOu4AysbkbyxNug%2Fuploads%2FNWqoiC9GExwr27a0aQ1S%2Fimage.png?alt=media&#x26;token=065d2253-09f4-41c7-97ab-c77a3c2aea1c)
+
+3. **Cómo ganar un sello** — explica la mecánica.
+
+![Cómo ganar sello](https://121681468-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FBfW4nnOu4AysbkbyxNug%2Fuploads%2FhG5TZn9MIhb6dNoopGSo%2Fimage.png?alt=media&#x26;token=a428042c-c776-4495-bede-d04a9a18087e)
+
+4. **Nombre de la empresa** — tu marca.
+
+![Empresa](https://121681468-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FBfW4nnOu4AysbkbyxNug%2Fuploads%2F4XlZaUWByLYByJ1PbDa8%2Fimage.png?alt=media&#x26;token=c461aec2-85be-4299-835d-07913a37a8ac)
+
+5. **Detalles de la recompensa** — ej.: “6 sellos = café gratis”. Aparece en el dorso y en el PDF promocional.
+
+![Recompensa detalles](https://121681468-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FBfW4nnOu4AysbkbyxNug%2Fuploads%2FqLEWlIwoJfIkVWMRIAid%2Fimage.png?alt=media&#x26;token=9c2f7446-9cc8-47df-83b9-55dad7c3904e)
+
+6. **Mensaje al ganar sello** — texto mostrado al obtener un sello.
+
+![Mensaje sello](https://121681468-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FBfW4nnOu4AysbkbyxNug%2Fuploads%2FGZ65GPszxwikpiGKrSaH%2Fimage.png?alt=media&#x26;token=28f103f1-6c52-4fda-a905-f87de41f8a7a)
+
+7. **Mensaje al ganar recompensa** — texto mostrado al ganar una recompensa.
+
+![Mensaje recompensa](https://121681468-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FBfW4nnOu4AysbkbyxNug%2Fuploads%2FKKLyaxl7GtGtf484irfK%2Fimage.png?alt=media&#x26;token=f7bdeaf2-6058-4217-a075-6e7d31a7b3fa)
+
+8. **Recompensas múltiples** — ingresa umbrales separados por coma (ej.: `3,6,9`) para emitir varias recompensas a lo largo del camino.
+
+![Recompensas múltiples](https://121681468-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FBfW4nnOu4AysbkbyxNug%2Fuploads%2FLaaoXBF4SLPP841YRpcW%2Fimage.png?alt=media&#x26;token=5b0f3eac-96bb-4ca6-8f9b-607cbd6b1db2)
+
+9. **¿Canjear recompensas automáticamente?** — si **Sí**, se canjea en el momento de otorgar el sello (a menos que el cliente lo rechace).
+
+![Canje automático](https://121681468-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FBfW4nnOu4AysbkbyxNug%2Fuploads%2Fgd7T07NyjDb813MzPUQT%2Fimage.png?alt=media&#x26;token=5c6066e7-12ca-4ad4-ad4d-605b83d42e46)
+
+10. **Programa de referidos** — activar/desactivar.
+
+![Referidos](https://121681468-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FBfW4nnOu4AysbkbyxNug%2Fuploads%2FOXDqaL19UO9e3e7Zvbp7%2Fimage.png?alt=media&#x26;token=eb5dc755-a1b5-4ee3-88ea-888dff24e6fa)
+
+11. **Otorgar bono cuando…** — define el momento en que se entrega el bono.
+
+![Momento bono](https://121681468-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FBfW4nnOu4AysbkbyxNug%2Fuploads%2FbKiLAExVl1jG9s9mhATW%2Fimage.png?alt=media&#x26;token=442f09d8-3160-4aca-b657-39bdfdf6ed81)
+
+12. **Sellos para quien refiere** — cuántos sellos gana el referidor por cada registro válido.
+
+![Sellos referidor](https://121681468-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FBfW4nnOu4AysbkbyxNug%2Fuploads%2FlDOMUZhopflhRdK1SazI%2Fimage.png?alt=media&#x26;token=e3329ea8-4c22-4573-8109-e2a3e1ec88ef)
+
+13. **Sellos para cliente nuevo** — cuántos sellos recibe quien se registra por el referido.
+
+![Sellos nuevo](https://121681468-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FBfW4nnOu4AysbkbyxNug%2Fuploads%2F3IqOnf3Fpr2ZvDnCtwiI%2Fimage.png?alt=media&#x26;token=a3cb9451-a1d0-444d-b587-59a6d6580db3)
+
+14. **Enlaces activos** — añade enlaces de **URL/Teléfono/Email/Dirección** para mostrar en la tarjeta.
+
+![Tipo de enlace](https://121681468-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FBfW4nnOu4AysbkbyxNug%2Fuploads%2FrRrsImsYVlsiG8yULDZT%2Fimage.png?alt=media&#x26;token=87d7c209-cdfa-4afe-967c-516a079e66ef)
+
+15. **Enlace** — destino.
+
+![Campo enlace](https://lh7-rt.googleusercontent.com/docsz/AD_4nXdbqWsYQGH5Igh6s6AXjnd6zP1tV1jzhTQ52gnU7tpqNrfyZqeJ4HAerGe0PWH8KMFoAS-mHupJdQeFxne5SXnKaJaMlkQ93OPzybrN-1EBF1KZjsScZs1pF39NodKL5FROBjRQ?key=yeaLRmJrs8JQ4J8t-YhgurJ8)
+
+16. **Texto** — etiqueta visible en la tarjeta.
+
+![Texto etiqueta](https://121681468-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FBfW4nnOu4AysbkbyxNug%2Fuploads%2Fd8nEEfXpYh1ZywjDWgWz%2Fimage.png?alt=media&#x26;token=7aa138c5-696c-488c-80eb-68aa00fb8fc7)
+
+17. Para eliminar un enlace, usa **Eliminar**.
+
+![Eliminar enlace](https://121681468-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FBfW4nnOu4AysbkbyxNug%2Fuploads%2FCGN2OQFX5LeINNl93djk%2Fimage.png?alt=media&#x26;token=a97321c7-6d1d-483f-b86e-630b5bd35281)
+
+18. Usa **Añadir enlace** para sumar más.
+
+![Añadir enlace](https://121681468-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FBfW4nnOu4AysbkbyxNug%2Fuploads%2F3KqocZXxmayq7uweXrmp%2Fimage.png?alt=media&#x26;token=d1aa0ea7-7b69-4fdf-8cba-6dd9293f355f)
+
+19. **Enlaces de feedback** — añade enlaces para reseñas (aparecen en el dorso tras que el cliente reciba un sello y evalúe la visita).
+
+![Feedback](https://121681468-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FBfW4nnOu4AysbkbyxNug%2Fuploads%2F12A9xnx6cERZIeOnTEnl%2Fimage.png?alt=media&#x26;token=cf385afc-22c6-4b81-a78c-acd36804d664)
+
+20. **Términos de uso** — activa el interruptor para mostrarlos en la tarjeta.
+
+![Toggle términos](https://121681468-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FBfW4nnOu4AysbkbyxNug%2Fuploads%2FRkZrdYzI1Cvr8GZD5Ocr%2Fimage.png?alt=media&#x26;token=ba80d7d9-91fe-484b-a50d-65d3ce2846c5)
+
+21. Ingresa el texto de **Términos de uso**.
+
+![Texto términos](https://121681468-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FBfW4nnOu4AysbkbyxNug%2Fuploads%2Ffb17nbN2fgXL9kApDYLJ%2Fimage.png?alt=media&#x26;token=0206a95f-3e0d-450e-9804-2ff402d57144)
+
+22. **Enlace a términos y condiciones completos** — URL a tus TyC (se muestran en el formulario y dorso).
+
+![Enlace TyC](https://121681468-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FBfW4nnOu4AysbkbyxNug%2Fuploads%2F362QBEPzvpe9oCoiy2hM%2Fimage.png?alt=media&#x26;token=c018a457-54f3-4475-8471-8faaf63d7456)
+
+23. **Información del emisor** — Empresa, Email y Teléfono (visible en el dorso).
+
+![Emisor](https://121681468-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FBfW4nnOu4AysbkbyxNug%2Fuploads%2FztqW8ay9xSFfPvmYNiVG%2Fimage.png?alt=media&#x26;token=c68b605b-0d89-4bc0-ad4a-8e31055b1049)
+
+24. Haz clic en **Finalizar**. Para activar la plantilla, pulsa **Activar**.  
+   ✅ Puedes instalar y probar una tarjeta **inactiva** (hasta 10 instalaciones). Actívala cuando confirmes la configuración.
+
+![Finalizar](https://121681468-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FBfW4nnOu4AysbkbyxNug%2Fuploads%2F4SSjTCts7lHVfoWCBLgo%2Fimage.png?alt=media&#x26;token=486ba754-f060-43b5-b2db-6a9a3cfef878)
+
+---
+
+### Guardar & Vista previa
+
+1. Al pulsar **Finalizar**, se abre la **Vista previa**.
+2. Escanea el **QR** para probar la tarjeta.
+
+![Escanear QR](https://121681468-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FBfW4nnOu4AysbkbyxNug%2Fuploads%2FTXUt6tqAvuekByOmHhfa%2Fimage.png?alt=media&#x26;token=5f220f9e-23c8-4901-9ded-7b99666f73aa)
+
+3. Haz clic en **Copiar enlace** para copiar la URL de la tarjeta.
+
+![Copiar enlace](https://121681468-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FBfW4nnOu4AysbkbyxNug%2Fuploads%2FwIHEaXAKhyobPEt2oDWk%2Fimage.png?alt=media&#x26;token=5912839b-7e01-44db-a452-9fa9481be87d)
+
+4. Pulsa **Activar tarjeta** para publicarla.
+
+![Activar tarjeta](https://121681468-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FBfW4nnOu4AysbkbyxNug%2Fuploads%2FNDQb3YYC1jniWtPfH5CG%2Fimage.png?alt=media&#x26;token=8ee840b4-a9e5-42cd-b73a-89ee0c478a57)

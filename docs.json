@@ -1,122 +1,143 @@
 {
-  "$schema": "https://mintlify.com/docs.json",
-  "theme": "mint",
-  "name": "Mint Starter Kit",
-  "colors": {
-    "primary": "#16A34A",
-    "light": "#07C983",
-    "dark": "#15803D"
-  },
-  "favicon": "/favicon.svg",
-  "navigation": {
-    "tabs": [
-      {
-        "tab": "Guides",
-        "groups": [
-          {
-            "group": "Getting started",
-            "pages": [
-              "index",
-              "quickstart",
-              "development"
-            ]
-          },
-          {
-            "group": "Customization",
-            "pages": [
-              "essentials/settings",
-              "essentials/navigation"
-            ]
-          },
-          {
-            "group": "Writing content",
-            "pages": [
-              "essentials/markdown",
-              "essentials/code",
-              "essentials/images",
-              "essentials/reusable-snippets"
-            ]
-          },
-          {
-            "group": "AI tools",
-            "pages": [
-              "ai-tools/cursor",
-              "ai-tools/claude-code",
-              "ai-tools/windsurf"
-            ]
-          }
-        ]
-      },
-      {
-        "tab": "API reference",
-        "groups": [
-          {
-            "group": "API documentation",
-            "pages": [
-              "api-reference/introduction"
-            ]
-          },
-          {
-            "group": "Endpoint examples",
-            "pages": [
-              "api-reference/endpoint/get",
-              "api-reference/endpoint/create",
-              "api-reference/endpoint/delete",
-              "api-reference/endpoint/webhook"
-            ]
-          }
-        ]
-      }
-    ],
-    "global": {
-      "anchors": [
-        {
-          "anchor": "Documentation",
-          "href": "https://mintlify.com/docs",
-          "icon": "book-open-cover"
+    "$schema": "https://mintlify.com/docs.json",
+    "theme": "mint",
+    "name": "Documentación Dezik Labs",
+    "colors": {
+        "primary": "#f22d36",
+        "light": "#f22d36",
+        "dark": "#f22d36"
+    },
+    "fonts": {
+        "heading": {
+            "family": "aeonik-bold",
+            "format": "woff2"
         },
-        {
-          "anchor": "Blog",
-          "href": "https://mintlify.com/blog",
-          "icon": "newspaper"
+        "body": {
+            "family": "aeonik-regular",
+            "format": "woff2"
         }
-      ]
+    },
+    "favicon": "/icon.svg",
+    "navigation": {
+        "tabs": [
+            {
+                "tab": "Dezik Labs",
+                "groups": [
+                    {
+                        "group": "Empezando",
+                        "pages": [
+                            "index",
+                            "quickstart",
+                            "development",
+                            "sobredezik"
+                        ]
+                    },
+                    {
+                        "group": "Tipos de tarjetas",
+                        "pages": [
+                            "typesofcards/tarjetacashback",
+                            "typesofcards/tarjetacupon",
+                            "typesofcards/tarjetadescuento",
+                            "typesofcards/tarjetamiembro",
+                            "typesofcards/tarjetamultipass",
+                            "typesofcards/tarjetarecompensas",
+                            "typesofcards/tarjetaregalo",
+                            "typesofcards/tarjetastickers"
+                        ]
+                    },
+                    {
+                        "group": "Writing content",
+                        "pages": [
+                            "essentials/markdown",
+                            "essentials/code",
+                            "essentials/images",
+                            "essentials/reusable-snippets"
+                        ]
+                    },
+                    {
+                        "group": "AI tools",
+                        "pages": [
+                            "ai-tools/cursor",
+                            "ai-tools/claude-code",
+                            "ai-tools/windsurf"
+                        ]
+                    }
+                ]
+            },
+            {
+                "tab": "Dezik Wallet",
+                "groups": [
+                    {
+                        "group": "API documentation",
+                        "pages": [
+                            "api-reference/introduction"
+                        ]
+                    },
+                    {
+                        "group": "Endpoint examples",
+                        "pages": [
+                            "api-reference/endpoint/get",
+                            "api-reference/endpoint/create",
+                            "api-reference/endpoint/delete",
+                            "api-reference/endpoint/webhook"
+                        ]
+                    }
+                ]
+            }
+        ],
+        "global": {
+            "anchors": [
+                {
+                    "anchor": "Dashboard",
+                    "href": "https://wallet.deziklabs.com",
+                    "icon": "house"
+                },
+                {
+                    "anchor": "Scanner",
+                    "href": "https://wallet.deziklabs.com/scanner-app",
+                    "icon": "qrcode"
+                },
+                {
+                    "anchor": "Dezik Bot",
+                    "href": "https://wa.me/593987361616",
+                    "icon": "whatsapp"
+                }
+            ]
+        }
+    },
+    "logo": {
+        "light": "/logo/red.svg",
+        "dark": "/logo/red.svg"
+    },
+    "navbar": {
+        "links": [
+            {
+                "label": "Support",
+                "href": "mailto:developer@deziklabs.com"
+            }
+        ],
+        "primary": {
+            "type": "button",
+            "label": "Dashboard",
+            "href": "https://dashboard.mintlify.com"
+        }
+    },
+    "contextual": {
+        "options": [
+            "copy",
+            "view",
+            "chatgpt",
+            "claude",
+            "perplexity",
+            "mcp",
+            "cursor",
+            "vscode"
+        ]
+    },
+    "footer": {
+        "socials": {
+            "instagram": "https://instagram.com/deziklabs",
+            "website": "https://deziklabs.com"     
+        }
     }
-  },
-  "logo": {
-    "light": "/logo/light.svg",
-    "dark": "/logo/dark.svg"
-  },
-  "navbar": {
-    "links": [
-      {
-        "label": "Support",
-        "href": "mailto:hi@mintlify.com"
-      }
-    ],
-    "primary": {
-      "type": "button",
-      "label": "Dashboard",
-      "href": "https://dashboard.mintlify.com"
-    }
-  },
-  "contextual": {
-    "options": [
-     "copy",
-     "view",
-     "chatgpt",
-     "claude",
-     "perplexity",
-     "mcp",
-     "cursor",
-     "vscode"
-   ]
-  },
-  "footer": {
-    "socials": {
-      "x": "https://x.com/mintlify",
-      "github": "https://github.com/mintlify",
-      "linkedin": "https://linkedin.com/company/mintlify"
-    }
-  }
 }

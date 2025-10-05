@@ -1,0 +1,252 @@
+---
+title: "Tarjeta de Regalo (Saldo Prepago)"
+description: "Cómo crear y configurar una tarjeta de regalo con saldo en Dezik Labs"
+slug: "gift"
+sidebarTitle: "Tarjeta de Regalo"
+---
+
+# Tarjeta de Regalo (Saldo Prepago)
+
+Una **tarjeta de regalo** funciona como un certificado con **saldo en puntos o dinero** que el cliente puede gastar en tus servicios.
+
+### Cómo funciona
+
+El cliente ve su **saldo** en la tarjeta y puede gastarlo **total o parcialmente**. Puedes **acreditar** puntos varias veces y **descontarlos** de una sola vez o por **porciones**.
+
+Puedes **emitir** una tarjeta desde la sección **Clientes** y enviarla por **SMS o email** con el enlace para instalarla.
+
+También existe la opción de **pago online** y de **regalarla a otra persona** (requiere conexión con **Stripe**).
+
+**Ejemplo:** creas una tarjeta de regalo de **1000 puntos**. El cliente te paga y acreditas ese monto en su tarjeta. Cuando vuelve, prestas el servicio y descuentas lo usado.
+
+Las tarjetas de regalo también sirven para **promos**: el comprador paga, recibe un **QR**, el destinatario lo escanea, instala la tarjeta y ve el **saldo** para canjear (p. ej., manicure o masaje facial).
+
+1. Tras iniciar sesión, ve al **menú lateral**.
+2. En la lista de módulos, haz clic en el ícono <img src="https://121681468-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FBfW4nnOu4AysbkbyxNug%2Fuploads%2Fdwvv3o54gpuhAez3wybk%2Fimage.png?alt=media&#x26;token=3fa79e9b-6537-4341-81d8-5652bfed4989" alt="Icono Tarjetas" style={{height:'1em',display:'inline-block',verticalAlign:'text-bottom'}} /> para abrir **Tarjetas**.
+
+![Tarjetas](https://121681468-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FBfW4nnOu4AysbkbyxNug%2Fuploads%2FMu6miudRod4hm5GoE1Lk%2Fimage.png?alt=media&#x26;token=83caa525-e64b-4f25-942f-de8a2e7cc9d7)
+
+3. Crea una tarjeta con una **plantilla** o **desde cero** (usaremos este flujo).
+4. Haz clic en <img src="https://121681468-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FBfW4nnOu4AysbkbyxNug%2Fuploads%2FPz6xkMxEzisvhd93RHup%2Fimage.png?alt=media&#x26;token=d2379df0-6356-45e8-8028-d5f2d8ddb256" alt="Desde cero" style={{height:'1em',display:'inline-block',verticalAlign:'text-bottom'}} />.
+
+![Desde cero](https://121681468-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FBfW4nnOu4AysbkbyxNug%2Fuploads%2FLIre6DukZibQbtim3G7s%2Fimage.png?alt=media&#x26;token=d021fdda-a704-499a-837d-d0cbcb2df246)
+
+5. El flujo tiene **5 secciones**: **Tipo de tarjeta**, **Ajustes**, **Diseño**, **Información** y **Guardar & Vista previa**.
+
+---
+
+### Tipo de tarjeta
+
+1. Selecciona el tipo de tarjeta.
+2. Elige **Gift** (Tarjeta de regalo).
+3. Haz clic en **Continuar** para ir a **Ajustes**.
+
+![Tipo de tarjeta](https://121681468-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FBfW4nnOu4AysbkbyxNug%2Fuploads%2F0oaF9ER7bZXstHa3t76e%2FScreenshot%20at%20Dec%2019%2012-23-20.png?alt=media&#x26;token=1a627108-5822-4423-9368-5a8e2a198a2c)
+
+---
+
+### Ajustes
+
+1. **Tipo de código de barras** — define cómo se escanea y reconoce la tarjeta (elige el estilo visual que prefieras).
+
+![Barcode](https://lh7-rt.googleusercontent.com/docsz/AD_4nXdq_KXvGOyR59xANRWi8yAd-T3ZAOsfJS3HWpzxRJQL8MnMdv3T-m29bxVJERl-w1aGgOJZ-IA2uJpp4uY6N2RS8O5a-ODMRWfmsouzeF0poJJUHQmBZM81FiRpyXupOvM?key=O2aOWya5-gzHO9UyvtuwrGrf)
+
+2. **Reglas de canje** —  
+   **Uso múltiple**: el saldo puede canjearse en varias transacciones.  
+   **Uso único**: debe canjearse **todo** en una sola transacción.
+
+![Reglas de canje](https://121681468-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FBfW4nnOu4AysbkbyxNug%2Fuploads%2FSWyoOW3qxtUFjQcvvjOR%2Fimage.png?alt=media&#x26;token=9106cc3f-d7f4-494a-b2e8-a8c48e8cba24)
+
+3. **Pagos online (Stripe)** — conecta **Stripe** y activa **“Se puede regalar”**. Opcional: límites de depósito (se muestran al emitir). Conecta **SMS** y **email** para enviar tarjetas.
+
+![Stripe y límites](https://121681468-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FBfW4nnOu4AysbkbyxNug%2Fuploads%2FnIp542oUWyf70PLNI4eu%2FScreenshot%20at%20Aug%2028%2015-20-49.png?alt=media&#x26;token=a17aad68-4443-4133-bd3f-2d07396561c2)
+
+4. **Vencimiento de la tarjeta** —  
+   - **Ilimitado**: sin fecha de caducidad.  
+   - **Fecha fija**: no usable después de esa fecha (no se borra del teléfono).  
+   - **Plazo fijo tras emisión**: expira X días después de **instalar** la tarjeta.
+
+![Vencimiento](https://121681468-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FBfW4nnOu4AysbkbyxNug%2Fuploads%2F68v2Wid2QxvJYQij3IlK%2FScreenshot%20at%20Dec%2019%2012-30-39.png?alt=media&#x26;token=0c66feab-40f3-4ea2-8dc7-723ced5366e3)
+
+5. **Vigencia de puntos (Lifetime points)** — define si los puntos **no vencen** o **caducan** tras un periodo.
+
+![Lifetime points](https://lh7-rt.googleusercontent.com/docsz/AD_4nXeoxG9MlF4uFQF6xYgPr99blfZt2UkPTspcILaPDhJ0tdjqr7HdaRlC6ieCkTV9jfELv-XPGaOR-51prJr7t48Fk3D-7_iZbNRFNIu014-XDn7i0SW63897XDlyAXJ8Mg?key=O2aOWya5-gzHO9UyvtuwrGrf)
+
+6. **Ubicaciones** — añade direcciones para activar push de **geolocalización** (Apple Wallet envía push al estar ~100 m cerca). Puedes añadir varias; no tienen que ser direcciones de negocio. [Más info](../geolocations).
+
+![Ubicaciones](https://121681468-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FBfW4nnOu4AysbkbyxNug%2Fuploads%2FLaHodHoutUQ6UC4v10Az%2Fimage.png?alt=media&#x26;token=7d18451f-62f4-4d95-88b5-6e1df1e7c592)
+
+7. **Idioma**, **Formato de fecha** y **Separador de miles/decimales** — definen cómo se muestran los datos.
+
+![Idioma](https://121681468-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FBfW4nnOu4AysbkbyxNug%2Fuploads%2FBFG34catOpRmcdJlfcxm%2FScreenshot%20at%20Dec%2019%2012-26-54.png?alt=media&#x26;token=013b4dd4-0977-40d6-b63b-8d8323127d33)
+![Formato de fecha](https://lh7-rt.googleusercontent.com/docsz/AD_4nXd5HlFDQNr0ndWRSj5Vli-a__Fzx_DrwUKmFj7r_N23pynA1eLzjVTrgO6DBUyX4aRKzJi7-WZql3XrYgxJJ_2ttgO86sf1K_fTztasY0Lw47vtQgMJF28HrQuKR2SayNA?key=O2aOWya5-gzHO9UyvtuwrGrf)
+![Separadores](https://lh7-rt.googleusercontent.com/docsz/AD_4nXfOi7XZVGltHWgKx8ENyrvebucYXEg34ELbUqBNuIcHz8iS70HWVQ4tU5IYTZhIy3EHE0JeV7aYdiePqWFvY_x7GG7BFrfuTBDOGwfFolKiLHH0H1wmAasubxpDsa5tDsc?key=O2aOWya5-gzHO9UyvtuwrGrf)
+
+8. **Monto de compra al registrar** — si está **ON**, el escáner pedirá el **monto** en cada transacción (alimenta **ROI/ingresos**). ✅ Solo aplica a transacciones hechas con el **escáner**. Si está **OFF**, el campo es opcional.
+
+![Monto al registrar](https://lh7-rt.googleusercontent.com/docsz/AD_4nXeJteY0lkBIFLSrIM0FHmT3iKFSb27MYt1iv1UhN1_TNOzG3OgdRJuqFacrjgbk-WcUjgLbamE7JCpxdjFb7MOQm89h0inOcvA5U6tGpQfBz2dVQ9HdDpM3H8fawrdwNpQ?key=O2aOWya5-gzHO9UyvtuwrGrf)
+
+9. **Formulario de emisión** — define los campos que completa el cliente al **instalar** la tarjeta.  
+   - Teléfono o email son **obligatorios**.  
+   - **Obligatorio** = fuerza el llenado.  
+   - **Único** = normalmente solo para **teléfono** (no recomendado para “Nombre”).  
+   - **Añadir campo** para crear/renombrar.  
+   - Para **eliminar**, usa el ícono de carrito.  
+   - El formulario debe contener **al menos un campo** (teléfono o email).
+
+![Formulario de emisión 1](https://121681468-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FBfW4nnOu4AysbkbyxNug%2Fuploads%2F1DyeHE5RTCnDVFvIqPy7%2Fimage.png?alt=media&#x26;token=afcc0d09-b4cd-49b4-98fb-86a4bde3fbab)
+![Formulario de emisión 2](https://121681468-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FBfW4nnOu4AysbkbyxNug%2Fuploads%2Fm8kP0zOqeveMKE9LDAZ7%2Fimage.png?alt=media&#x26;token=9e4ed421-58e1-498e-a31a-3333cf110210)
+
+10. **UTM** — crea enlaces por canal (ej. “Facebook”). Se genera **URL** y **QR** con esa UTM. Luego verás cuántas instalaciones llegaron por cada canal.
+
+![UTM 1](https://121681468-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FBfW4nnOu4AysbkbyxNug%2Fuploads%2FKkaSrG3CqyvntobklfRB%2Fimage.png?alt=media&#x26;token=e542cacc-5d15-4e67-bc18-1530ada0127b)
+![UTM 2](https://121681468-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FBfW4nnOu4AysbkbyxNug%2Fuploads%2FqgKCvJiw9AAjcFKMu1VF%2Fimage.png?alt=media&#x26;token=53bdad4a-cd38-4e4f-8b12-6dc188f52ceb)
+
+11. **Máscara de teléfono** — prefijo por defecto (el cliente puede cambiarlo).
+
+![Phone mask](https://121681468-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FBfW4nnOu4AysbkbyxNug%2Fuploads%2FIRExDkkqQE9VEX8jlJVh%2Fimage.png?alt=media&#x26;token=a23012da-b992-4f8e-ab4d-3aca26d05b59)
+
+12. **Política de privacidad** — muestra/edita el consentimiento en el formulario (texto editable).
+
+![Política de privacidad](https://121681468-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FBfW4nnOu4AysbkbyxNug%2Fuploads%2Fshsyu0ioxpDdjmxSPBdV%2Fimage.png?alt=media&#x26;token=0efff4a6-e736-4f12-8d35-30106bb459fe)
+
+13. **Botones de instalación** — **Google Wallet** (Android) y **PWA** (instalar como app web).  
+    Si tu cuenta tiene canales extra (p. ej. **WhatsApp**), aparecerán por defecto.
+
+![Botones de instalación](https://121681468-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FBfW4nnOu4AysbkbyxNug%2Fuploads%2FBJBk0UzKZYkBwgVG65zI%2Fimage.png?alt=media&#x26;token=dbadcee5-4b86-45e3-83bd-d08cc3fb6089)
+
+14. **Límite de tarjetas emitidas** — cuántas se pueden distribuir (**0 = ilimitado**).
+
+![Límite](https://lh7-rt.googleusercontent.com/docsz/AD_4nXdF0xwpW2zGpOyLzK2LxA7YIMMCEYNw6UoOYNSh4Th2qaxq31moVImFcDgHt4CSORscrhUBqhKh-cioquOpyGEnSH9JPldfu3BOHcxzqx4AnxeSmuusfPkH1dZ13u9eGR0?key=O2aOWya5-gzHO9UyvtuwrGrf)
+
+15. **Puntos al emitir** — puntos de bienvenida al **recibir** la tarjeta (0 = sin puntos automáticos).  
+    Ej.: si pones **50**, quien instale la tarjeta verá **50** en su saldo inicial.
+
+![Puntos al emitir](https://121681468-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FBfW4nnOu4AysbkbyxNug%2Fuploads%2FItDQ4igNnfzZEdb21Lmx%2Fimage.png?alt=media&#x26;token=b8b543c2-c1b5-4d90-8273-946c759f2034)
+
+16. **Puntos por cumpleaños** — se acreditan el día del cumpleaños (con push).
+
+![Birthday points](https://docs.boomerangme.cards/~gitbook/image?url=https%3A%2F%2F121681468-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FBfW4nnOu4AysbkbyxNug%252Fuploads%252FzQRVPM5fPyfoXsdIf0lw%252Fimage.png%3Falt%3Dmedia%26token%3Dd6b3c925-e18e-43df-a59e-8d82dbd04be9&#x26;width=768&#x26;dpr=4&#x26;quality=100&#x26;sign=e20ffc51&#x26;sv=2)
+
+17. **Analytics** — pega aquí tus scripts de analítica si lo necesitas.
+
+![Analytics](https://121681468-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FBfW4nnOu4AysbkbyxNug%2Fuploads%2FZves6Ctmh61DVJSig87o%2Fimage.png?alt=media&#x26;token=3cd5ce67-0670-403f-aa7b-0816341c4089)
+
+Haz clic en **Continuar** para ir a **Diseño**.
+
+![Continuar](https://121681468-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FBfW4nnOu4AysbkbyxNug%2Fuploads%2Fuhqv42TnVdsZ1yR5N5nV%2Fimage.png?alt=media&#x26;token=7111a164-04c0-48f9-b3a5-d47e0b3a8387)
+
+---
+
+### Diseño
+
+1. **Logo** — se muestra en la tarjeta y en el formulario de emisión.
+
+![Logo](https://121681468-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FBfW4nnOu4AysbkbyxNug%2Fuploads%2FrjOCNLHQxbOZoyYvWrsB%2Fimage.png?alt=media&#x26;token=5c7a7608-fb3c-4f03-b880-8868a3d12631)
+
+2. **Ícono (push)** — ícono para notificaciones.
+
+![Ícono](https://121681468-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FBfW4nnOu4AysbkbyxNug%2Fuploads%2FM4Gn35gm9gSJ9sjKgGfb%2Fimage.png?alt=media&#x26;token=eb5b13d1-1ff9-4cfd-9db2-0724a4f64e04)
+
+3. **Fondo de la parte central** — sube una imagen (respeta tamaño/peso recomendados).
+
+![Fondo central](https://121681468-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FBfW4nnOu4AysbkbyxNug%2Fuploads%2F7eyfQ91zJT8dantLR9U4%2Fimage.png?alt=media&#x26;token=c70fdcc2-3dc9-41ac-b95a-7cb2d5f90c17)
+
+4. **Colores** — Fondo de tarjeta, Color de texto y Fondo de la parte central.
+
+![Colores](https://121681468-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FBfW4nnOu4AysbkbyxNug%2Fuploads%2F3PKEqmxrFTX52aJtppu7%2Fimage.png?alt=media&#x26;token=55ed5cc7-b458-43a8-96c6-fd7ec395a25d)
+
+5. **Nombres de campos** — elige qué campo mostrar (los definidos en el formulario) y **renómbralo**.
+
+![Campo](https://121681468-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FBfW4nnOu4AysbkbyxNug%2Fuploads%2FgCUFgnC30RZfjUvzDc1x%2Fimage.png?alt=media&#x26;token=38adfee9-839b-45a7-8d15-bb20fa6a10a0)
+![Nombre del campo](https://121681468-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FBfW4nnOu4AysbkbyxNug%2Fuploads%2FfvvdygSLbVSXSDXutbr1%2Fimage.png?alt=media&#x26;token=67c6ee84-0f8b-42a7-8a68-74b88113ce5c)
+
+6. Visual del formulario: **Mostrar logo** y **Mostrar color de fondo** en el formulario de emisión.
+
+![Mostrar logo](https://121681468-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FBfW4nnOu4AysbkbyxNug%2Fuploads%2FtaZpvU7FVM9nzcJ6SsaQ%2Fimage.png?alt=media&#x26;token=b0f8c228-43e1-451d-94e7-9052770c1f9f)
+![Color en formulario](https://121681468-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FBfW4nnOu4AysbkbyxNug%2Fuploads%2FXOwxUiVSXUMzrzEnQvsZ%2Fimage.png?alt=media&#x26;token=131b2314-dac7-4453-a039-82d2e74f27e0)
+
+Haz clic en **Continuar** para ir a **Información**.
+
+![Continuar a Información](https://121681468-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FBfW4nnOu4AysbkbyxNug%2Fuploads%2Fdz2YhnwCQ9F60edes2cP%2Fimage.png?alt=media&#x26;token=45c72f61-1110-4ebd-b2a8-65042a60c2b9)
+
+---
+
+### Información
+
+1. Completa los campos y revisa la **vista previa móvil** (derecha).
+
+2. **Descripción de la tarjeta** — nombre/título de la promoción.
+
+![Descripción](https://121681468-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FBfW4nnOu4AysbkbyxNug%2Fuploads%2FPju2xcn2Jm7fprb80Wl6%2Fimage.png?alt=media&#x26;token=1165e25e-d6ad-4823-8ce2-960cf53756dc)
+
+3. **Nombre de la empresa** — se muestra también en el **título** de las notificaciones push.
+
+![Empresa](https://121681468-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FBfW4nnOu4AysbkbyxNug%2Fuploads%2FCUa7KkFGSxXJ8uydOMcU%2Fimage.png?alt=media&#x26;token=d5ff7edd-ad03-4515-ab99-218822fc0f4e)
+
+4. **Enlaces activos** — añade **URL/Teléfono/Email/Dirección** (se muestran en el **dorso**).  
+   ✅ *iPhone:* en **vista rápida** pueden no ser clicables; ábrelos desde **Apple Wallet**.
+
+![Tipo de enlace](https://121681468-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FBfW4nnOu4AysbkbyxNug%2Fuploads%2FwCuNIay4lsfwsxd3S9U3%2Fimage.png?alt=media&#x26;token=ba7b25cc-6459-4385-be24-22303ae0ff73)
+![Link](https://121681468-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FBfW4nnOu4AysbkbyxNug%2Fuploads%2FcFlZpvTO7iHTLSbauxjF%2Fimage.png?alt=media&#x26;token=5d389649-63a7-42f4-baf0-0ad499c035e6)
+![Texto](https://121681468-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FBfW4nnOu4AysbkbyxNug%2Fuploads%2Fx2tZyhceN2KzBKzO0S6u%2Fimage.png?alt=media&#x26;token=c31ad284-196f-479d-ad44-71268ea01170)
+
+**Eliminar** para borrar un enlace. **Añadir enlace** para sumar más.
+
+![Eliminar enlace](https://121681468-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FBfW4nnOu4AysbkbyxNug%2Fuploads%2F2DC2oRL3eru8GqMb4gML%2Fimage.png?alt=media&#x26;token=80748b90-6f51-4499-acac-f2a5b7ee74ed)
+![Añadir enlace](https://121681468-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FBfW4nnOu4AysbkbyxNug%2Fuploads%2FnRBBqN18ccuvOxOoXqsE%2Fimage.png?alt=media&#x26;token=6a4551a4-5531-4c7d-b403-5de4f3f00a2f)
+
+5. **Enlaces de feedback** — enlaces para reseñas que se muestran **solo después** de que el cliente califique la visita (elegir estrellas). **No** aparecen en el dorso por defecto.
+
+![Feedback Links](https://121681468-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FBfW4nnOu4AysbkbyxNug%2Fuploads%2FCYK2H4PxyXtNk6mO3Gdv%2Fimage.png?alt=media&#x26;token=1bada791-8f87-4307-8041-b92081efdb73)
+
+6. **Términos de uso** — activa el interruptor y pega el texto (p. ej., qué servicios cubre la promo).  
+   **Enlace a TyC completos** — URL a tus términos oficiales.
+
+![Toggle TyC](https://121681468-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FBfW4nnOu4AysbkbyxNug%2Fuploads%2FpkuUIEipRomxS3eojFjN%2Fimage.png?alt=media&#x26;token=69e1778c-5bb2-4676-9322-4a08fd845415)
+![Términos de uso](https://121681468-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FBfW4nnOu4AysbkbyxNug%2Fuploads%2FSDxU76Kwp0QaaoIZdMvV%2Fimage.png?alt=media&#x26;token=f0a51ab8-2bbe-446f-8e34-768457f57a1d)
+![Link a TyC](https://121681468-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FBfW4nnOu4AysbkbyxNug%2Fuploads%2FCJzvF3ZujJGgdeLO1WCM%2Fimage.png?alt=media&#x26;token=9dcaa7a8-9d12-4f04-bcaa-5ea9af73d7b3)
+
+7. **Información del emisor** — Empresa, Email y Teléfono (visible en el dorso).
+
+![Emisor](https://121681468-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FBfW4nnOu4AysbkbyxNug%2Fuploads%2F4e9pWY7JU22531rV4YKh%2Fimage.png?alt=media&#x26;token=34729627-c245-4805-9ae1-7184eb441a58)
+
+---
+
+### Guardar & Vista previa
+
+1. Al pulsar **Finalizar**, se abre la **Vista previa**.
+2. **Escanea el QR** para probar la tarjeta.
+3. Pulsa **Activar tarjeta** para publicarla.  
+   ⚠️ Actívala solo cuando estés seguro de la configuración: tras activar, **algunos ajustes principales no podrán cambiarse**.  
+   Mientras está **inactiva**, solo **10 personas** pueden instalarla.
+
+![Vista previa / Activar](https://121681468-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FBfW4nnOu4AysbkbyxNug%2Fuploads%2F1I3cWXd4ZcPhDotbON6g%2Fimage.png?alt=media&#x26;token=46b8914a-1447-4e8c-aa89-4893d912bde8)
+![Ajustes bloqueados tras activar](https://121681468-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FBfW4nnOu4AysbkbyxNug%2Fuploads%2FTDgv9TQHbwpBRn98OWuC%2Fimage.png?alt=media&#x26;token=43ca1308-1d8b-46cd-94e2-9ea237e99a21)
+
+---
+
+### Cómo **emitir** tarjetas de regalo a tus clientes
+
+Puedes emitir tarjetas de regalo a clientes: selecciona los clientes y haz clic en **Emisión de tarjeta**. Luego elige la **plantilla** deseada.
+
+![Emitir a clientes 1](https://121681468-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FBfW4nnOu4AysbkbyxNug%2Fuploads%2FhWaYtOwLYpduaORL4Odi%2FScreenshot%20at%20Dec%2019%2012-36-39.png?alt=media&#x26;token=b3d9e42d-67fa-45f1-a9c4-40639fb4ed3b)
+![Emitir a clientes 2](https://121681468-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FBfW4nnOu4AysbkbyxNug%2Fuploads%2FajfEaTmnXtw25wUSWk7M%2Fimage.png?alt=media&#x26;token=385173c9-7a28-42be-86a0-d3398c413050)
+
+Configura el **saldo** y la **fecha de vencimiento**.  
+Si tienes **SMS/email** habilitados, puedes enviar el **enlace personalizado** de instalación por SMS o email. Con **variables**, personaliza el mensaje. Programa el envío o **envíalo ahora**.
+
+![Enviar por SMS/Email](https://121681468-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FBfW4nnOu4AysbkbyxNug%2Fuploads%2FlMr8Hb9FZOId68AoFqLB%2FScreenshot%20at%20Dec%2019%2012-38-44.png?alt=media&#x26;token=a3cdbfe5-2ba5-4329-9752-6e444170ddff)
+
+Luego verás la tarjeta en el **perfil del cliente** (haz clic en el nombre para abrirlo).
+
+![Perfil del cliente 1](https://121681468-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FBfW4nnOu4AysbkbyxNug%2Fuploads%2FVUXai3vPkqgQVoDUCAXt%2Fimage.png?alt=media&#x26;token=951d5090-68bb-4836-8563-6cf3211ae5ba)
+![Perfil del cliente 2](https://121681468-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FBfW4nnOu4AysbkbyxNug%2Fuploads%2FftX5ixTv8BoM9A3xVdfy%2Fimage.png?alt=media&#x26;token=5824aa2a-ce9d-41e5-9397-3112cfab5f88)
+
+Esto significa que la tarjeta fue emitida y el cliente ya puede **usarla**.
+
+---
+
+### FAQ
+
+- ✅ Este tipo de tarjeta **no** tiene **programa de referidos**.
